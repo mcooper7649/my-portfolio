@@ -44,14 +44,14 @@ class App extends Component {
         <meta
           name="description"
           property="og:description"
-          content="My Code Dojo | Welcome to Michael Cooper's Code Dojo! A Place Where This Ninja Can Practice His Craft Stealthily And Show Off Past Accomplishments."
+          content="My Code Dojo — the portfolio of Michael Cooper, a senior full-stack & homelab engineer building with React, Next.js, Kotlin/Android, Docker, n8n, Home Assistant, and PostgreSQL."
           data-react-helmet="true"
         />
         <meta name="author" property="og:author" content="Michael Cooper" />
         <meta
           name="publish_date"
           property="og:publish_date"
-          content="2021-07-11T00:00:00-0600"
+          content="2026-05-31T00:00:00-0600"
         />
         <script
           src="https://kit.fontawesome.com/8cc1b75eb3.js"

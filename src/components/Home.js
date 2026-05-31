@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Logo.css';
 import { ThemeContext } from '../contexts/ThemeContext';
-import TikTokGallery from './TikTokGallery';
+import NowBuilding from './NowBuilding';
 import Hero from './Hero';
 import SkillSet from './SkillSet';
 
@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <main className={styles.classes}>
         <Hero />
-        <TikTokGallery />
+        <NowBuilding />
         <SkillSet />
       </main>
     );

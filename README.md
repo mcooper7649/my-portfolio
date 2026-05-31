@@ -1,3 +1,5 @@
+> ⚠️ **DEPRECATED — NOT DEPLOYED.** The live portfolio at https://www.mycodedojo.com is built from the `react-modern-portfolio` repo (`frontend_react/`, deployed on Netlify). Do not edit this repo.
+
 ## My Portfolio Site built in React
 ---
 

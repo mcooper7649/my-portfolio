@@ -4,4 +4,5 @@ A running log of notable content and design changes to the portfolio, newest fir
 
 | Date | Type | Summary |
 | ---- | ---- | ------- |
+| 2026-05-31 | design | Rewrote the About page with a truthful 2026 bio + focus-area chips; fixed the infinite loading spinner so the page renders even if the CMS request is slow, with a local headshot fallback. |
 | 2026-05-31 | design | Rewrote the home Hero into a self-contained 2026 identity intro (senior full-stack + homelab engineer); removed the quotable.io quote dependency. |

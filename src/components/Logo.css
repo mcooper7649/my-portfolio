@@ -105,6 +105,17 @@ hr.myHr {
   display: inline-block;
 }
 
+/* Pill-style tags for the curated Featured Projects grid (no trailing comma). */
+.tag-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  background: #dbeafe;
+  border-radius: 9999px;
+  padding: 0.15rem 0.6rem;
+}
+
 .project-tags:after {
   content: ', ';
   white-space: pre;

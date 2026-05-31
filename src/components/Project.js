@@ -85,7 +85,7 @@ export default function Project() {
               </p>
               <ul className="my-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <li key={tag} className="project-tags">
+                  <li key={tag} className="tag-pill">
                     {tag}
                   </li>
                 ))}

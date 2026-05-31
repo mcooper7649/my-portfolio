@@ -3,6 +3,7 @@ import { Button } from 'react-materialize';
 import sanityClient from '../client.js';
 import './Logo.css';
 import { ThemeContext } from '../contexts/ThemeContext';
+import featuredProjects from '../data/featuredProjects';
 
 export default function Project() {
   const { isDarkMode } = useContext(ThemeContext);
@@ -65,15 +66,51 @@ export default function Project() {
   return (
     <main className={styles.main}>
       <section className={styles.section}>
+        <h1 className="bg-black mb-6 py-1 text-gray-200 rounded text-3xl lg:text-5xl flex justify-center cutive">
+          Featured Projects
+        </h1>
+        <hr className="myHr"></hr>
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {featuredProjects.map((project) => (
+            <article
+              key={project.id}
+              className="flex flex-col rounded-lg shadow-xl bg-white p-6"
+            >
+              <div className="text-4xl mb-2">{project.emoji}</div>
+              <h3 className="text-blue-700 text-xl lg:text-2xl font-bold mb-2">
+                {project.title}
+              </h3>
+              <p className="text-sm lg:text-base text-gray-700 leading-relaxed flex-grow">
+                {project.blurb}
+              </p>
+              <ul className="my-4 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <li key={tag} className="project-tags">
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-block text-center px-4 py-2 rounded-md font-bold text-white bg-blue-600 hover:bg-blue-500 transition"
+              >
+                {project.linkLabel} ↗
+              </a>
+            </article>
+          ))}
+        </section>
+
         <input
           className="p-1 w-full"
           type="search"
-          placeholder="🔍 Search by keyword eg: React, Node, Mongo"
+          placeholder="🔍 Search more by keyword eg: React, Node, Mongo"
           onChange={handleChange}
           style={styles.input}
         />
         <h1 className="bg-black my-6 py-1 text-gray-200 rounded text-3xl lg:text-5xl flex justify-center cutive">
-          My Projects
+          More Projects
         </h1>
         <hr className="myHr"></hr>
         {/* <h2 className="text-md lg:text-lg text-gray-600 flex justify-center mb-4 lg:mb-12 cutive">
@@ -104,7 +141,6 @@ export default function Project() {
                       {' '}
                       {project.title}
                     </p>
-                    <p>{console.log(project)}</p>
                   </Button>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">
